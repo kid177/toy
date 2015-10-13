@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述5个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>超市管理系统 </title>
+
+        <!-- Bootstrap -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <link href="/static/css/theme.css" rel="stylesheet">
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">超市管理系统:{{user_name}}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">首页</a></li>
+                    <li class="active"><a href="/supplier">供应商信息</a></li>
+                    <li><a href="/modify?gid=&name=&value=&number=&in_time=&is_name=&s_name=">商品录入</a></li>
+                    <li><a href="/search?g=&n=&num=&s_t=&e_t=&s_n=">商品查询</a></li>
+                    <li><a href="/auth/logout">退出</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+        </nav>
+        <div class="page-header" text-align=center>
+            <h1>供应商信息</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width:1000px">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th style="width:100px">联系人</th>
+                            <th>电话</th>
+                            <th>传真</th>
+                            <th style="width:100px">地址</th>
+                            <th style="width:200px">合作时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>10000</td>
+                            <td>李记食品厂</td>
+                            <td>Lina</td>
+                            <td>13873019745</td>
+                            <td>32233322</td>
+                            <td>湖南岳阳开发区</td>
+                            <td>2015-02-23</td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>10001</td>
+                            <td>同喜食品有限公司</td>
+                            <td>张峰</td>
+                            <td>13873419745</td>
+                            <td>23332</td>
+                            <td>广州市白云区</td>
+                            <td>2015-03-21</td>
+                        </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>10002</td>
+                            <td>恒安纸业有新公司</td>
+                            <td>刘思言</td>
+                            <td>13315419745</td>
+                            <td>2331255</td>
+                            <td>胡本省汉川市</td>
+                            <td>2015-05-21</td>
+                        </tr>
+                        <tr>
+                            <td>#4</td>
+                            <td>10008</td>
+                            <td>达利食品有限公司</td>
+                            <td>周瑶</td>
+                            <td>13273899215</td>
+                            <td>2333255</td>
+                            <td>湖南岳阳</td>
+                            <td>2015-01-21</td>
+                        </tr>
+                        <tr>
+                            <td>#5</td>
+                            <td>10011</td>
+                            <td>ABC卫生有限公司</td>
+                            <td>王莎莎</td>
+                            <td>13838899745</td>
+                            <td>12342</td>
+                            <td>浙江省杭州市</td>
+                            <td>2014-12-21</td>
+                        </tr>
+                        <tr>
+                            <td>#6</td>
+                            <td>10177</td>
+                            <td>BIDU煎饼有限公司</td>
+                            <td>许健</td>
+                            <td>13838888845</td>
+                            <td>12146</td>
+                            <td>浙江省杭州市</td>
+                            <td>2014-12-11</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/static/jquery-2.1.4.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/static/js/bootstrap.min.js"></script>
+    </body>
+</html>

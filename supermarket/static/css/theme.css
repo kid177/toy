@@ -1,0 +1,31 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin:0 auto;
+    width: 1000px;
+}
+
+.theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+.select2-container .select2-chioce {
+    width: 10px;
+}
+#bt {
+    position: absolute;
+    left: 350px;
+}
+#bt1 {
+    position: absolute;
+    left: 440px;
+}
